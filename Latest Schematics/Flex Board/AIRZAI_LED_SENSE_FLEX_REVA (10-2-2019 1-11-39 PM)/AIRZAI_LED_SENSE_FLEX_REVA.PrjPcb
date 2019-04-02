@@ -263,14 +263,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=..\AIRZAI_LED_SENSE_FLEX_REVB
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=..\AIRZAI_LED_SENSE_FLEX_REVB.xls
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
