@@ -1,0 +1,28 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [AIRZAI_LED_SENSE_FLEX_REVA.PrjPcb]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GTO]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GTP]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GTS]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GTL]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GBL]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GBS]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GBP]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GBO]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GM4]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GM13]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GM15]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GM17]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GM18]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GKO]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GPT]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.GPB]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.RUL]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.EXTREP]
+   Generated File[AIRZAI_LED_SENSE_FLEX_REVA.REP]
+
+
+Files Generated   : 19
+Documents Printed : 0
+
+Finished Output Generation At 12:43:24 AM On 9/2/2019
