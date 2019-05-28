@@ -1,0 +1,32 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [AIRZAI_LID_BD_REVB.PrjPcb]
+   Generated File[AIRZAI_LID_BD_REVB.GTO]
+   Generated File[AIRZAI_LID_BD_REVB.GTP]
+   Generated File[AIRZAI_LID_BD_REVB.GTS]
+   Generated File[AIRZAI_LID_BD_REVB.GTL]
+   Generated File[AIRZAI_LID_BD_REVB.GP1]
+   Generated File[AIRZAI_LID_BD_REVB.GP2]
+   Generated File[AIRZAI_LID_BD_REVB.GBL]
+   Generated File[AIRZAI_LID_BD_REVB.GBS]
+   Generated File[AIRZAI_LID_BD_REVB.GBP]
+   Generated File[AIRZAI_LID_BD_REVB.GBO]
+   Generated File[AIRZAI_LID_BD_REVB.GM3]
+   Generated File[AIRZAI_LID_BD_REVB.GM4]
+   Generated File[AIRZAI_LID_BD_REVB.GM13]
+   Generated File[AIRZAI_LID_BD_REVB.GM15]
+   Generated File[AIRZAI_LID_BD_REVB.GM17]
+   Generated File[AIRZAI_LID_BD_REVB.GM18]
+   Generated File[AIRZAI_LID_BD_REVB.GM20]
+   Generated File[AIRZAI_LID_BD_REVB.GKO]
+   Generated File[AIRZAI_LID_BD_REVB.GPT]
+   Generated File[AIRZAI_LID_BD_REVB.GPB]
+   Generated File[AIRZAI_LID_BD_REVB.RUL]
+   Generated File[AIRZAI_LID_BD_REVB.EXTREP]
+   Generated File[AIRZAI_LID_BD_REVB.REP]
+
+
+Files Generated   : 23
+Documents Printed : 0
+
+Finished Output Generation At 10:13:31 PM On 24/5/2019

@@ -1,0 +1,31 @@
+Source PCB Design Airzai_LED_Strip_Panel.PcbDoc contains embedded board array. It is recomended to generate individual BOM for each embedded board PCB design.
+
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Airzai LED Strip Panel.PrjPcb]
+   Generated File[Airzai_LED_Strip_Panel.GTO]
+   Generated File[Airzai_LED_Strip_Panel.GTP]
+   Generated File[Airzai_LED_Strip_Panel.GTS]
+   Generated File[Airzai_LED_Strip_Panel.GTL]
+   Generated File[Airzai_LED_Strip_Panel.GBL]
+   Generated File[Airzai_LED_Strip_Panel.GBS]
+   Generated File[Airzai_LED_Strip_Panel.GBP]
+   Generated File[Airzai_LED_Strip_Panel.GBO]
+   Generated File[Airzai_LED_Strip_Panel.GM1]
+   Generated File[Airzai_LED_Strip_Panel.GM2]
+   Generated File[Airzai_LED_Strip_Panel.GM3]
+   Generated File[Airzai_LED_Strip_Panel.GM4]
+   Generated File[Airzai_LED_Strip_Panel.GM17]
+   Generated File[Airzai_LED_Strip_Panel.GM18]
+   Generated File[Airzai_LED_Strip_Panel.GKO]
+   Generated File[Airzai_LED_Strip_Panel.GPT]
+   Generated File[Airzai_LED_Strip_Panel.GPB]
+   Generated File[Airzai_LED_Strip_Panel.RUL]
+   Generated File[Airzai_LED_Strip_Panel.EXTREP]
+   Generated File[Airzai_LED_Strip_Panel.REP]
+
+
+Files Generated   : 20
+Documents Printed : 0
+
+Finished Output Generation At 2:28:14 AM On 18/4/2019

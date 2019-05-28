@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: D:\Work\GitHub\Airzai-PCB-Design\AIRZAI_MBD_REVB2 (1-4-2019 2-06-16 AM)\AIRZAI_MBD_REVB2 (5-8-2019)\AIRZAI BASE BOARD REV B.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=airzai base board rev b-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=airzai base board rev b-slotholes.txt|DrillLayers=gtl,g1,g2,gbl

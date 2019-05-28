@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=TOFINT Pin=TP4-1
+Removed Pin From Net: NetName=INT Pin=TP6-1
+Removed Pin From Net: NetName=EN Pin=TP7-1
+Removed Pin From Net: NetName=XSHUNT Pin=TP8-1
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP4
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP6
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP7
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP8
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP14
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP15
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP16
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP17
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP18

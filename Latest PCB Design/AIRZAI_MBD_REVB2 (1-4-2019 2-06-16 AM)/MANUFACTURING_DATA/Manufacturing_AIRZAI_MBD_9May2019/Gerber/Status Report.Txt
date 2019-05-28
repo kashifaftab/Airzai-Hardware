@@ -1,0 +1,36 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [AIRZAI_MBD_REVB2.PrjPcb]
+   Generated File[AIRZAI BASE BOARD REV B.GTO]
+   Generated File[AIRZAI BASE BOARD REV B.GTP]
+   Generated File[AIRZAI BASE BOARD REV B.GTS]
+   Generated File[AIRZAI BASE BOARD REV B.GTL]
+   Generated File[AIRZAI BASE BOARD REV B.G1]
+   Generated File[AIRZAI BASE BOARD REV B.G2]
+   Generated File[AIRZAI BASE BOARD REV B.GBL]
+   Generated File[AIRZAI BASE BOARD REV B.GBS]
+   Generated File[AIRZAI BASE BOARD REV B.GBP]
+   Generated File[AIRZAI BASE BOARD REV B.GBO]
+   Generated File[AIRZAI BASE BOARD REV B.GM1]
+   Generated File[AIRZAI BASE BOARD REV B.GM4]
+   Generated File[AIRZAI BASE BOARD REV B.GM17]
+   Generated File[AIRZAI BASE BOARD REV B.GM18]
+   Generated File[AIRZAI BASE BOARD REV B.GM24]
+   Generated File[AIRZAI BASE BOARD REV B.GM25]
+   Generated File[AIRZAI BASE BOARD REV B.GM26]
+   Generated File[AIRZAI BASE BOARD REV B.GM27]
+   Generated File[AIRZAI BASE BOARD REV B.GM28]
+   Generated File[AIRZAI BASE BOARD REV B.GM29]
+   Generated File[AIRZAI BASE BOARD REV B.GM32767]
+   Generated File[AIRZAI BASE BOARD REV B.GKO]
+   Generated File[AIRZAI BASE BOARD REV B.GPT]
+   Generated File[AIRZAI BASE BOARD REV B.GPB]
+   Generated File[AIRZAI BASE BOARD REV B.RUL]
+   Generated File[AIRZAI BASE BOARD REV B.EXTREP]
+   Generated File[AIRZAI BASE BOARD REV B.REP]
+
+
+Files Generated   : 27
+Documents Printed : 0
+
+Finished Output Generation At 7:37:46 PM On 9/5/2019

@@ -1,0 +1,30 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.PrjPcb]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GTO]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GTP]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GTS]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GTL]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBL]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBS]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBP]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBO]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM2]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM4]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM5]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM13]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM15]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM17]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM18]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GKO]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GPT]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GPB]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.RUL]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.EXTREP]
+   Generated File[AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.REP]
+
+
+Files Generated   : 21
+Documents Printed : 0
+
+Finished Output Generation At 6:34:40 PM On 3/5/2019

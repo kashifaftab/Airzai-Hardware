@@ -1,0 +1,33 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: AIRZAI BASE BOARD REV B.GBR   9/5/2019  7:37:45 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GTL                Top Layer                               
+.G1                 MidLayer1                               
+.G2                 MidLayer2                               
+.GBL                Bottom Layer                            
+.GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
+.GBO                Bottom Overlay                          
+.GM1                Mechanical 1                            
+.GM4                Mechanical 4                            
+.GM17               Mechanical 17                           
+.GM18               Mechanical 18                           
+.GM24               Top Assembly                            
+.GM25               Bottom Assembly                         
+.GM26               Top Courtyard                           
+.GM27               Bottom Courtyard                        
+.GM28               Top 3D Body                             
+.GM29               Bottom 3D Body                          
+.GM32767            Route Guide                             
+.GKO                Keep-Out Layer                          
+.GPT                Top Pad Master                          
+.GPB                Bottom Pad Master                       
+------------------------------------------------------------------------------------------

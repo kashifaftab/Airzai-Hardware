@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=CAP1_TOUCH_OUT Pin=TP9-1
+Removed Pin From Net: NetName=CAP2_TOUCH_OUT Pin=TP19-1
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP9
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVB Member=TP19

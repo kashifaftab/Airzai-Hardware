@@ -1,0 +1,88 @@
+Protel Design System Design Rule Check
+PCB File : D:\Work\GitHub\Airzai-PCB-Design\Airzai Flex Board\ALTIUM_DATA\AIRZAI_LED_SENSE_FLEX_REVB\AIRZAI_LED_SENSE_FLEX_REVB.PcbDoc
+Date     : 17/5/2019
+Time     : 3:19:59 PM
+
+Processing Rule : Clearance Constraint (Gap=10mil) ((OnLayer('Keep-Out Layer'))),((InNet('GND') AND InPolygon))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+   Violation between Clearance Constraint: (Collision < 6mil) Between Pad CRX0-1(1151.845mil,2410.236mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Pad CRX1-1(-315.593mil,2327.115mil) on Top Layer And Region (0 hole(s)) Top Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Top Layer And Track (1101mil,2622mil)(1174.171mil,2501.289mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Top Layer And Track (1151.845mil,2410.236mil)(1174.171mil,2501.289mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Top Layer And Track (-444mil,2114mil)(-315.528mil,2327.076mil) on Top Layer 
+   Violation between Clearance Constraint: (5.505mil < 6mil) Between Track (1118.496mil,2378.931mil)(1196.968mil,2424.114mil) on Keep-Out Layer And Track (1151.845mil,2410.236mil)(1174.171mil,2501.289mil) on Top Layer 
+Rule Violations :6
+
+Processing Rule : Clearance Constraint (Gap=30mil) ((InComponent('CRX0') OR InComponent('CRX1') OR InComponent('CRX2') OR InNet('NetCRX0_1') OR InNet('NetCRX1_1') OR InNet('NetCRX2_1') OR InNet('NetR4_2') OR InNet('NetR2_1') OR InNet('NetR1_1'))),((InNet('GND') AND InPolygon))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),((InNet('GND') AND InPolygon))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mil) ((InComponent('CRX0') OR InComponent('CRX1'))),(OnLayer('Multi-Layer'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mil) ((InComponent('D1') OR InComponent('D2') OR InComponent('D3') OR InComponent('D4') OR InComponent('D5') OR InComponent('D6'))),(OnLayer('Multi-Layer'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mil) ((OnLayer('Keep-Out Layer'))),((InComponent('D1') OR InComponent('D2') OR InComponent('D3') OR InComponent('D4') OR InComponent('D5') OR InComponent('D6') OR InComponent('CRX0') OR InComponent('CRX1') OR InComponent('J1')))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad D1-2(884.04mil,1100.395mil) on Bottom Layer Location : [X = 8085.218mil][Y = 8884.369mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad D2-1(689.158mil,1100.403mil) on Bottom Layer Location : [X = 7832.266mil][Y = 8884.377mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad D3-2(214.749mil,1100.411mil) on Bottom Layer Location : [X = 7415.927mil][Y = 8884.385mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad D4-2(-119.917mil,1100.42mil) on Bottom Layer Location : [X = 7081.267mil][Y = 8884.394mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad D5-1(-302.801mil,2300.505mil) on Bottom Layer Location : [X = 6883.887mil][Y = 10109.707mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad D5-2(-232.918mil,2421.544mil) on Bottom Layer Location : [X = 6924.673mil][Y = 10180.287mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad D6-1(1213.22mil,2305.315mil) on Bottom Layer Location : [X = 8370.814mil][Y = 10114.517mil]
+   Violation between Short-Circuit Constraint: Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad D6-2(1143.338mil,2426.354mil) on Bottom Layer Location : [X = 8330.027mil][Y = 10185.097mil]
+   Violation between Short-Circuit Constraint: Between Pad CRX0-1(1151.845mil,2410.236mil) on Top Layer And Region (0 hole(s)) Top Layer Location : [X = 8323.985mil][Y = 10194.21mil]
+   Violation between Short-Circuit Constraint: Between Pad CRX1-1(-315.593mil,2327.115mil) on Top Layer And Region (0 hole(s)) Top Layer Location : [X = 6856.548mil][Y = 10111.089mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Top Layer And Track (1101mil,2622mil)(1174.171mil,2501.289mil) on Top Layer Location : [X = 8326.473mil][Y = 10317.406mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Top Layer And Track (1151.845mil,2410.236mil)(1174.171mil,2501.289mil) on Top Layer Location : [X = 8335.148mil][Y = 10239.736mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Top Layer And Track (-444mil,2114mil)(-315.528mil,2327.076mil) on Top Layer Location : [X = 6819.438mil][Y = 10050.121mil]
+Rule Violations :13
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=100mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=2mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=1mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Room AIRZAI_LED_SENSE_FLEX_REVB (Bounding Region = (3280mil, 5070mil, 17940mil, 14670mil) (InComponentClass('AIRZAI_LED_SENSE_FLEX_REVB'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 19
+Waived Violations : 0
+Time Elapsed        : 00:00:01

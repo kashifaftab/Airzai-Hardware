@@ -1,0 +1,7 @@
+DRC Rules Export File for PCB: D:\Work\GitHub\Airzai-PCB-Design\LID Board\AIRZAI_LID_BD_REVB (28-1-2019 2-17-03 AM)\AIRZAI_LID_BD_REVB.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_gnd_polygon|Scope=Board|Minimum=8.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=7.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.76
+RuleKind=SolderMaskExpansion|RuleName=mlMinStopFrame|Scope=Board|Minimum=2.76
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00

@@ -1,0 +1,11 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of Project [AIRZAI_LED_SENSE_FLEX_REVA.PrjPcb]
+   Generated File[Pick Place for AIRZAI_LED_SENSE_FLEX_REVA.txt]
+   Generated File[Pick Place for AIRZAI_LED_SENSE_FLEX_REVA.csv]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 12:45:21 AM On 9/2/2019
