@@ -1,0 +1,300 @@
+*************************************************************
+FileName = Airzai_LED_Strip_Panel.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Pad Master
+      File : Airzai_LED_Strip_Panel.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D13
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : Airzai_LED_Strip_Panel.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+    D17
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : Airzai_LED_Strip_Panel.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : Airzai_LED_Strip_Panel.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Airzai_LED_Strip_Panel.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D21
+    D25
+    D26
+    D27
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Airzai_LED_Strip_Panel.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+    D17
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Airzai_LED_Strip_Panel.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D28
+    D29
+    D30
+    D31
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Airzai_LED_Strip_Panel.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D28
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Airzai_LED_Strip_Panel.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Airzai_LED_Strip_Panel.GBO
+
+    Adding Layer      : Bottom Overlay
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : Airzai_LED_Strip_Panel.GM1
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D12
+    D21
+    D33
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 2
+      File : Airzai_LED_Strip_Panel.GM2
+
+    Adding Layer      : Mechanical 2
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 3
+      File : Airzai_LED_Strip_Panel.GM3
+
+    Adding Layer      : Mechanical 3
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D21
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 4
+      File : Airzai_LED_Strip_Panel.GM4
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D21
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 17
+      File : Airzai_LED_Strip_Panel.GM17
+
+    Adding Layer      : Mechanical 17
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D21
+    D34
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 18
+      File : Airzai_LED_Strip_Panel.GM18
+
+    Adding Layer      : Mechanical 18
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D21
+    D26
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : Airzai_LED_Strip_Panel.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D21
+*************************************************************
+

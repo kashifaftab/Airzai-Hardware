@@ -1,0 +1,14 @@
+Source PCB Design Airzai_LED_Strip_Panel.PcbDoc contains embedded board array. It is recomended to generate individual BOM for each embedded board PCB design.
+
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Airzai LED Strip Panel.PrjPcb]
+   Generated File[Airzai_LED_Strip_Panel.TXT]
+   Generated File[Airzai_LED_Strip_Panel.LDP]
+   Generated File[Airzai_LED_Strip_Panel.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 2:28:44 AM On 18/4/2019

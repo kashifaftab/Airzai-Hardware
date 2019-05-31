@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [AIRZAI_MBD_REVB2.PrjPcb]
+   Generated File[AIRZAI BASE BOARD REV B-RoundHoles.TXT]
+   Generated File[AIRZAI BASE BOARD REV B-SlotHoles.TXT]
+   Generated File[AIRZAI BASE BOARD REV B.LDP]
+   Generated File[AIRZAI BASE BOARD REV B.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 7:38:29 PM On 9/5/2019

@@ -1,0 +1,22 @@
+Change Component Footprint: Designator=J1 Old Footprint=JST- S2B-PH-SM4-TB(LF)(SN)-2_V New Footprint=CON_78171_0002
+Change Component Footprint: Designator=J2 Old Footprint=JST- S2B-PH-SM4-TB(LF)(SN)-2_V New Footprint=CON_78171_0002
+Change Component Comment : Designator=J1 Old Comment=S2B-PH-SM4-TB(LF)(SN) New Comment==Value
+Change Component Comment : Designator=J2 Old Comment=S2B-PH-SM4-TB(LF)(SN) New Comment==Value
+Change component parameters: Designator = "J1"; Footprint = "CON_78171_0002"; UniqueID = "\COKXCUHG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "MOLEX"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "781710002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Note"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4459TR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2"; Footprint = "CON_78171_0002"; UniqueID = "\HIWCPXFK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "MOLEX"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "781710002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Note"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4459TR-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"

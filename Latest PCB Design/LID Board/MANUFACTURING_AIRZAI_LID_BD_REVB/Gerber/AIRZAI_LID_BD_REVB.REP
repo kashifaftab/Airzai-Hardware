@@ -1,0 +1,529 @@
+*************************************************************
+FileName = AIRZAI_LID_BD_REVB.GBR
+AutoAperture = True
+*************************************************************
+Generating : Mechanical 13
+      File : AIRZAI_LID_BD_REVB.GM13
+
+    Adding Layer      : Mechanical 13
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D12
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom
+      File : AIRZAI_LID_BD_REVB.GBL
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D120
+    D121
+    D122
+    D129
+    D130
+    D131
+    D132
+    D133
+    D134
+    D135
+    D136
+    D137
+    D138
+    D139
+    D140
+    D141
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : AIRZAI_LID_BD_REVB.GM15
+
+    Adding Layer      : Mechanical 15
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D12
+    D14
+    D19
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : AIRZAI_LID_BD_REVB.GP1
+
+    Adding Layer      : GND
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D123
+    D124
+    D125
+    D126
+    D127
+    D128
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 18
+      File : AIRZAI_LID_BD_REVB.GM18
+
+    Adding Layer      : Mechanical 18
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D13
+    D14
+    D19
+    D82
+    D83
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : AIRZAI_LID_BD_REVB.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D19
+    D147
+    D149
+    D150
+    D151
+    D152
+    D153
+    D154
+*************************************************************
+
+*************************************************************
+Generating : Top
+      File : AIRZAI_LID_BD_REVB.GTL
+
+    Adding Layer      : Top
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
+    D122
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 20
+      File : AIRZAI_LID_BD_REVB.GM20
+
+    Adding Layer      : Mechanical 20
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D19
+    D82
+    D148
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 4
+      File : AIRZAI_LID_BD_REVB.GM4
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : AIRZAI_LID_BD_REVB.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D29
+    D30
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+*************************************************************
+
+*************************************************************
+Generating : PWR
+      File : AIRZAI_LID_BD_REVB.GP2
+
+    Adding Layer      : PWR
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D82
+    D123
+    D124
+    D125
+    D126
+    D127
+    D128
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : AIRZAI_LID_BD_REVB.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : AIRZAI_LID_BD_REVB.GBO
+
+    Adding Layer      : Bottom Overlay
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D17
+    D19
+    D82
+    D143
+    D144
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : AIRZAI_LID_BD_REVB.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D76
+    D142
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : AIRZAI_LID_BD_REVB.GPB
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D19
+    D129
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 3
+      File : AIRZAI_LID_BD_REVB.GM3
+
+    Adding Layer      : Mechanical 3
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D19
+    D145
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : AIRZAI_LID_BD_REVB.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 17
+      File : AIRZAI_LID_BD_REVB.GM17
+
+    Adding Layer      : Mechanical 17
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D14
+    D19
+    D79
+    D81
+    D82
+    D146
+    D147
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : AIRZAI_LID_BD_REVB.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : AIRZAI_LID_BD_REVB.GPT
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D77
+    D78
+*************************************************************
+

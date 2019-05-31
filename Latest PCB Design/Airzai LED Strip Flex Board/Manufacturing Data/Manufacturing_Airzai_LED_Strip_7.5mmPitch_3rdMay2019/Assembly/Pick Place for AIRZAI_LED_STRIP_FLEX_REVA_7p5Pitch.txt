@@ -1,0 +1,58 @@
+Altium Designer Pick and Place Locations
+D:\Work\Projects\AIRZAI\2nd Revision\Airzai LED Board\LED_Strip_Board_7p5mmPitch_Longer\Project Outputs for AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch\Pick Place for AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       03/05/19
+Time:       22:00
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+Designator Comment           Layer    Footprint   Center-X(mm) Center-Y(mm) Rotation Description            Ref-X(mm) Ref-Y(mm) Pad-X(mm) Pad-Y(mm) 
+P3         ""                TopLayer Fudicial    167.9589     1.9237       0        ""                     167.9589  1.9237    167.9589  1.9237    
+P2         ""                TopLayer Fudicial    1.5748       3.3528       0        ""                     1.5748    3.3528    1.5748    3.3528    
+U21        APA102-2020-256-8 TopLayer APA102–2020 5.2766       2.5000       270      "DotStar Micro LEDs"   5.2766    2.5000    6.1766    3.2500    
+U20        APA102-2020-256-8 TopLayer APA102–2020 12.7766      2.5000       270      "DotStar Micro LEDs"   12.7766   2.5000    13.6766   3.2500    
+C21        0.1µF             TopLayer 0402CAP     7.5708       2.5256       270      "Capacitor, X7R, ±10%" 7.5708    2.5256    7.5708    3.0256    
+C20        0.1µF             TopLayer 0402CAP     15.0626      2.4666       270      "Capacitor, X7R, ±10%" 15.0626   2.4666    15.0626   2.9666    
+P1         "Header 4"        TopLayer FFC_4PADS   166.5028     -10.9572     0        "Header, 4-Pin"        166.5028  -10.9572  167.2528  -10.9572  
+U19        APA102-2020-256-8 TopLayer APA102–2020 20.2766      2.5000       270      "DotStar Micro LEDs"   20.2766   2.5000    21.1766   3.2500    
+U18        APA102-2020-256-8 TopLayer APA102–2020 27.7766      2.5000       270      "DotStar Micro LEDs"   27.7766   2.5000    28.6766   3.2500    
+U17        APA102-2020-256-8 TopLayer APA102–2020 35.2766      2.5000       270      "DotStar Micro LEDs"   35.2766   2.5000    36.1766   3.2500    
+U16        APA102-2020-256-8 TopLayer APA102–2020 42.7766      2.5000       270      "DotStar Micro LEDs"   42.7766   2.5000    43.6766   3.2500    
+U15        APA102-2020-256-8 TopLayer APA102–2020 50.2766      2.5000       270      "DotStar Micro LEDs"   50.2766   2.5000    51.1766   3.2500    
+U14        APA102-2020-256-8 TopLayer APA102–2020 57.7766      2.5000       270      "DotStar Micro LEDs"   57.7766   2.5000    58.6766   3.2500    
+U13        APA102-2020-256-8 TopLayer APA102–2020 65.2766      2.5000       270      "DotStar Micro LEDs"   65.2766   2.5000    66.1766   3.2500    
+U12        APA102-2020-256-8 TopLayer APA102–2020 72.7766      2.5000       270      "DotStar Micro LEDs"   72.7766   2.5000    73.6766   3.2500    
+U11        APA102-2020-256-8 TopLayer APA102–2020 80.2766      2.5000       270      "DotStar Micro LEDs"   80.2766   2.5000    81.1766   3.2500    
+U10        APA102-2020-256-8 TopLayer APA102–2020 87.7766      2.5000       270      "DotStar Micro LEDs"   87.7766   2.5000    88.6766   3.2500    
+U9         APA102-2020-256-8 TopLayer APA102–2020 95.2766      2.5000       270      "DotStar Micro LEDs"   95.2766   2.5000    96.1766   3.2500    
+U8         APA102-2020-256-8 TopLayer APA102–2020 102.7766     2.5000       270      "DotStar Micro LEDs"   102.7766  2.5000    103.6766  3.2500    
+U7         APA102-2020-256-8 TopLayer APA102–2020 110.2766     2.5000       270      "DotStar Micro LEDs"   110.2766  2.5000    111.1766  3.2500    
+U6         APA102-2020-256-8 TopLayer APA102–2020 117.7766     2.5000       270      "DotStar Micro LEDs"   117.7766  2.5000    118.6766  3.2500    
+U5         APA102-2020-256-8 TopLayer APA102–2020 125.2792     2.5000       270      "DotStar Micro LEDs"   125.2792  2.5000    126.1792  3.2500    
+C19        0.1µF             TopLayer 0402CAP     22.5228      2.5294       270      "Capacitor, X7R, ±10%" 22.5228   2.5294    22.5228   3.0294    
+C18        0.1µF             TopLayer 0402CAP     30.0118      2.5054       270      "Capacitor, X7R, ±10%" 30.0118   2.5054    30.0118   3.0054    
+C17        0.1µF             TopLayer 0402CAP     37.5118      2.4920       270      "Capacitor, X7R, ±10%" 37.5118   2.4920    37.5118   2.9920    
+C16        0.1µF             TopLayer 0402CAP     44.9958      2.5308       270      "Capacitor, X7R, ±10%" 44.9958   2.5308    44.9958   3.0308    
+C15        0.1µF             TopLayer 0402CAP     52.5118      2.4920       270      "Capacitor, X7R, ±10%" 52.5118   2.4920    52.5118   2.9920    
+C14        0.1µF             TopLayer 0402CAP     59.9974      2.4919       270      "Capacitor, X7R, ±10%" 59.9974   2.4919    59.9974   2.9919    
+C13        0.1µF             TopLayer 0402CAP     67.5118      2.4237       270      "Capacitor, X7R, ±10%" 67.5118   2.4237    67.5118   2.9237    
+C12        0.1µF             TopLayer 0402CAP     75.0118      2.4792       270      "Capacitor, X7R, ±10%" 75.0118   2.4792    75.0118   2.9792    
+C11        0.1µF             TopLayer 0402CAP     82.5036      2.4920       270      "Capacitor, X7R, ±10%" 82.5036   2.4920    82.5036   2.9920    
+C10        0.1µF             TopLayer 0402CAP     90.0118      2.4666       270      "Capacitor, X7R, ±10%" 90.0118   2.4666    90.0118   2.9666    
+C9         0.1µF             TopLayer 0402CAP     97.5118      2.4620       270      "Capacitor, X7R, ±10%" 97.5118   2.4620    97.5118   2.9620    
+C8         0.1µF             TopLayer 0402CAP     104.9864     2.4754       270      "Capacitor, X7R, ±10%" 104.9864  2.4754    104.9864  2.9754    
+C7         0.1µF             TopLayer 0402CAP     112.4864     2.4920       270      "Capacitor, X7R, ±10%" 112.4864  2.4920    112.4864  2.9920    
+C6         0.1µF             TopLayer 0402CAP     119.9864     2.5000       270      "Capacitor, X7R, ±10%" 119.9864  2.5000    119.9864  3.0000    
+C5         0.1µF             TopLayer 0402CAP     127.5144     2.4412       270      "Capacitor, X7R, ±10%" 127.5144  2.4412    127.5144  2.9412    
+U4         APA102-2020-256-8 TopLayer APA102–2020 132.7766     2.5000       270      "DotStar Micro LEDs"   132.7766  2.5000    133.6766  3.2500    
+U3         APA102-2020-256-8 TopLayer APA102–2020 140.2766     2.5000       270      "DotStar Micro LEDs"   140.2766  2.5000    141.1766  3.2500    
+U2         APA102-2020-256-8 TopLayer APA102–2020 147.7766     2.5000       270      "DotStar Micro LEDs"   147.7766  2.5000    148.6766  3.2500    
+U1         APA102-2020-256-8 TopLayer APA102–2020 155.2766     2.5000       270      "DotStar Micro LEDs"   155.2766  2.5000    156.1766  3.2500    
+C4         0.1µF             TopLayer 0402CAP     135.0244     2.4238       270      "Capacitor, X7R, ±10%" 135.0244  2.4238    135.0244  2.9238    
+C3         0.1µF             TopLayer 0402CAP     142.4864     2.5174       270      "Capacitor, X7R, ±10%" 142.4864  2.5174    142.4864  3.0174    
+C2         0.1µF             TopLayer 0402CAP     149.9398     2.5000       270      "Capacitor, X7R, ±10%" 149.9398  2.5000    149.9398  3.0000    
+C1         0.1µF             TopLayer 0402CAP     157.4864     2.5000       270      "Capacitor, X7R, ±10%" 157.4864  2.5000    157.4864  3.0000    

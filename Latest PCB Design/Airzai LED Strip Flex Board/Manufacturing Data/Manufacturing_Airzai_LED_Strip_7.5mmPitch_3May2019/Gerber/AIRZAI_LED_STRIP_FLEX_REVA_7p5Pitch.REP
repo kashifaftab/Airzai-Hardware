@@ -1,0 +1,321 @@
+*************************************************************
+FileName = AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBR
+AutoAperture = True
+*************************************************************
+Generating : Mechanical 17
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM17
+
+    Adding Layer      : Mechanical 17
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D31
+    D42
+    D43
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBO
+
+    Adding Layer      : Bottom Overlay
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D19
+    D26
+    D29
+    D31
+    D34
+    D35
+    D36
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 4
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM4
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D15
+    D16
+    D17
+    D18
+    D19
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 5
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM5
+
+    Adding Layer      : Mechanical 5
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D29
+    D38
+    D39
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 18
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM18
+
+    Adding Layer      : Mechanical 18
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D13
+    D31
+    D42
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM13
+
+    Adding Layer      : Mechanical 13
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D40
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D15
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM15
+
+    Adding Layer      : Mechanical 15
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D40
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D15
+    D16
+    D17
+    D18
+    D19
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 2
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GM2
+
+    Adding Layer      : Mechanical 2
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D13
+    D37
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Mechanical 4
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : AIRZAI_LED_STRIP_FLEX_REVA_7p5Pitch.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D11
+    D19
+*************************************************************
+

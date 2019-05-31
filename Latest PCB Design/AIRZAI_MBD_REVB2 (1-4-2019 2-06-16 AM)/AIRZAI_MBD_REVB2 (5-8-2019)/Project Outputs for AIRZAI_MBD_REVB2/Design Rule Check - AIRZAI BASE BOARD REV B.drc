@@ -1,0 +1,60 @@
+Protel Design System Design Rule Check
+PCB File : D:\Work\GitHub\Airzai-PCB-Design\AIRZAI_MBD_REVB2 (1-4-2019 2-06-16 AM)\AIRZAI_MBD_REVB2 (5-8-2019)\AIRZAI BASE BOARD REV B.PcbDoc
+Date     : 9/5/2019
+Time     : 8:23:19 PM
+
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+   Violation between Clearance Constraint: (Collision < 7mil) Between Arc (0mil,0mil) on Top Layer And Pad FID1-1(0mil,0mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 7mil) Between Arc (1538mil,2661mil) on Top Layer And Pad FID4-1(1538mil,2661mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 7mil) Between Arc (3071mil,-1mil) on Top Layer And Pad FID3-1(3071mil,-1mil) on Top Layer 
+Rule Violations :3
+
+Processing Rule : Clearance Constraint (Gap=10mil) ((InNet('GND') AND InPolygon)),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=1000mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=2mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Room AIRZAI_BASE_BD_REVA Sheet2 (Bounding Region = (2250mil, 1310mil, 11935mil, 5025mil) (Disabled)(InComponentClass('AIRZAI_BASE_BD_REVA Sheet2'))
+Rule Violations :0
+
+Processing Rule : Room AIRZAI_BASE_BD_REVA Sheet1 (Bounding Region = (2240mil, 1065mil, 9105mil, 5035mil) (Disabled)(InComponentClass('AIRZAI_BASE_BD_REVA Sheet1'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 3
+Waived Violations : 0
+Time Elapsed        : 00:00:00
