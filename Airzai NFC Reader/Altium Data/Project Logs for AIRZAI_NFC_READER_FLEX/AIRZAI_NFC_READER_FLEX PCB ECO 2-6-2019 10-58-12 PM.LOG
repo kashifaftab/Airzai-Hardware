@@ -1,0 +1,72 @@
+Change Component Comment : Designator=U1 Old Comment=MFRC52201HN1,157 New Comment=MFRC52202HN1,115
+Change component parameters: Designator = "U1"; Footprint = "VFQFN-32-MFRC52202HN1,157"; UniqueID = "\DWNONAEC"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Upverter"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://upverter.com/upn/revision/969ab42917e1bb0e/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/MFRC522.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/15040/mfrc522-15040655.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/15040/mfrc522-15040655.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency"; Value = "13.56MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "NXP Semiconductors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "MFRC52202HN1,115"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-25°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "32"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "1500"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1 = 6.54000, 10 = 5.83700, 25 = 5.25280, 100 = 4.78590, 250 = 4.31904, 500 = 3.87544 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "558"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "568-15200-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "MFRC52202HN1,115"; VariantName = "[No Variations]"
+Added Component: Designator=J?(FFC_Pads_MBD)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.molex.com/molex/index.jsp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.molex.com/webdocs/datasheets/pdf/en-us/0528922033_FFC_FPC_CONNECTORS.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.molex.com/pdm_docs/sd/528922033_sd.pdf"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-2
+Added Pin To Net: NetName=GND Pin=J?-2
+Added Pin To Net: NetName=PWM2 Pin=J?-3
+Added Pin To Net: NetName=PWM2 Pin=J?-3
+Added Pin To Net: NetName=PWM1 Pin=J?-4
+Added Pin To Net: NetName=PWM1 Pin=J?-4
+Added Pin To Net: NetName=ADC_CH1 Pin=J?-5
+Added Pin To Net: NetName=ADC_CH1 Pin=J?-5
+Added Pin To Net: NetName=ADC_CH0 Pin=J?-6
+Added Pin To Net: NetName=ADC_CH0 Pin=J?-6
+Added Pin To Net: NetName=SPR_GPO3 Pin=J?-7
+Added Pin To Net: NetName=SPR_GPO3 Pin=J?-7
+Added Pin To Net: NetName=SPR_GPO2 Pin=J?-8
+Added Pin To Net: NetName=SPR_GPO2 Pin=J?-8
+Added Pin To Net: NetName=XSHUNT Pin=J?-9
+Added Pin To Net: NetName=XSHUNT Pin=J?-9
+Added Pin To Net: NetName=EN Pin=J?-10
+Added Pin To Net: NetName=EN Pin=J?-10
+Added Pin To Net: NetName=INT Pin=J?-11
+Added Pin To Net: NetName=INT Pin=J?-11
+Added Pin To Net: NetName=SWIPE/TO2/RDY Pin=J?-12
+Added Pin To Net: NetName=SWIPE/TO2/RDY Pin=J?-12
+Added Pin To Net: NetName=TOFINT Pin=J?-13
+Added Pin To Net: NetName=TOFINT Pin=J?-13
+Added Pin To Net: NetName=SPR_GPO1 Pin=J?-14
+Added Pin To Net: NetName=SPR_GPO1 Pin=J?-14
+Added Pin To Net: NetName=SENS_I2C_SCL Pin=J?-15
+Added Pin To Net: NetName=SENS_I2C_SCL Pin=J?-15
+Added Pin To Net: NetName=SENS_I2C_SDA Pin=J?-16
+Added Pin To Net: NetName=SENS_I2C_SDA Pin=J?-16
+Added Pin To Net: NetName=EN Pin=J?-17
+Added Pin To Net: NetName=EN Pin=J?-17
+Added Pin To Net: NetName=3V3 Pin=J?-18
+Added Pin To Net: NetName=3V3 Pin=J?-18
+Added Pin To Net: NetName=+5 Pin=J?-19
+Added Pin To Net: NetName=+5 Pin=J?-19
+Added Pin To Net: NetName=+5 Pin=J?-20
+Added Pin To Net: NetName=+5 Pin=J?-20
+Added Member To Class: ClassName=AIRZAI_NFC_READER_FLEX Member=Component J? FFC Cable

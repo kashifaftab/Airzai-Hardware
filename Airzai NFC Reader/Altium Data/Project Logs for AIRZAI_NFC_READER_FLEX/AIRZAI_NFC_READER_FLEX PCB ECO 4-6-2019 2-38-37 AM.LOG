@@ -1,0 +1,7 @@
+Added Component: Designator=ANT1(ANTENNA-NFC-60MMX30MM)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetANT1_1 Pin=ANT1-1
+Added Pin To Net: NetName=NetANT1_1 Pin=ANT1-1
+Added Pin To Net: NetName=NetANT1_2 Pin=ANT1-2
+Added Pin To Net: NetName=NetANT1_2 Pin=ANT1-2
+Added Member To Class: ClassName=AIRZAI_NFC_READER_FLEX Member=Component ANT1 NFC_ANT

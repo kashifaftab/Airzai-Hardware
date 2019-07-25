@@ -1,0 +1,608 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD19\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">14/6/2019</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2:06:56 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc" class="file"><acronym title="D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc">D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">88</td></tr>
+</table>
+</td>
+</table><a name="IDNHV43ZKUPK55CEUBBWQKHV3NCD32GAXSXBNRLOBI4CTU0VTB1XVH"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1HXR1EY4LQTWMLENEHJSUPDNJEDWB1LT5KJ4LZNFLYXRALRQTUTM">Clearance Constraint (Gap=10mil) ((OnLayer('Keep-Out Layer'))),((InNet('GND') AND InPolygon))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUD5TSF0YRVD03MZUBBVRN535MOIDK3VXBI22BGAY2IEYVF21XO">Clearance Constraint (Gap=6mil) (All),(All)</a></td>
+<td class="column2">84</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIG2PFM1RSWA2BOGVMDMTKG2ZAJ5LIVWCYHBOY5LTPP1PZE5MICCE">Clearance Constraint (Gap=10mil) (OnLayer('Keep-Out Layer')),((InNet('+5V') AND InPolygon))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTCK12JIISLQRE2JMUKWG0GGZAPEIBQ1QUZT2NWEC3ZXA5CXCY4UF">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFUVCKDAIU4R0IF15N5M0QP0PMFFXRIR2TIB2FUC0XQGBPZZLPLCG">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4LLK4GIR1KBYGZYXJQNNIUWDXEIZJUE2M01G1JBHSRA0QT1O05ZK">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0H2YOZHMVSPUOC0JCXYT41UI2F5JQREBBM10Y4GEMTYJZOVAZYP">Width Constraint (Min=6mil) (Max=100mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0KUR5LKC35UCE4U4WUSODDNLNKKJKJ2EDIQE2FESKMDR3QFWPLYG">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2X1AKDLF0P3SLVLICOP4PQABUPCN1UHRJ5P444G42WEBB0NC1GLM">Hole Size Constraint (Min=1mil) (Max=100mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNO5KT3UM13S3GXAMEXM3APG15NSNZUZFHXTWQJFM4SO4OBBJGJWJ">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOWMSOOOU4ZC2PGN3WJDPT33PIOIGNQXGTUO1KDG1MXA5I2KSBFMP">Minimum Solder Mask Sliver (Gap=1mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEJXBND3TUBQGDU4ED32M4W1RJFE0JE0MPFQT4BJ3NWHRKALMRW3G">Silk To Solder Mask (Clearance=2mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXPMZJ1OOE1RFBC1NSS2ACDAQJMATSBLD21TOD5OI3RW4BXDVKKQH">Silk to Silk (Clearance=0mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTPAE12RCNF0GDWPMVOB2CRK5LKYMZUWKZFV5D1CO2MJJMT3MEYPE">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKZY1KIQMYA2HPGAY1JDXFCFDHFG005WI5FLPJAHPMPAV1ILN0IED">Room AIRZAI_NFC_READER_FLEX (Bounding Region = (3280mil, 5070mil, 34209.879mil, 27627.19mil) (InComponentClass('AIRZAI_NFC_READER_FLEX'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKQL21EGTM3PEBKPJFUR5GGJKSEP5VFR3CHYXSZPRDM1VXE4E0BF">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">88</td>
+</tr>
+</table><br><a name="IDUD5TSF0YRVD03MZUBBVRN535MOIDK3VXBI22BGAY2IEYVF21XO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=6mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20586.961mil|Location2.X=20591.961mil|Location1.Y=21667.336mil|Location2.Y=21672.336mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20586.961mil|Location2.X=20591.961mil|Location1.Y=21667.336mil|Location2.Y=21672.336mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad ANT1-1(2087.74mil,1300.795mil) on Bottom Layer And Track (2087.74mil,1300.795mil)(2421.441mil,1300.795mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19366.961mil|Location2.X=19371.961mil|Location1.Y=21667.336mil|Location2.Y=21672.336mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19366.961mil|Location2.X=19371.961mil|Location1.Y=21667.336mil|Location2.Y=21672.336mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad ANT1-2(867.74mil,1300.795mil) on Bottom Layer And Track (534.039mil,1300.795mil)(867.74mil,1300.795mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20329.158mil|Location2.X=20334.158mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20329.158mil|Location2.X=20334.158mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-1(1835.843mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20329.158mil|Location2.X=20334.158mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20329.158mil|Location2.X=20334.158mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-1(1835.843mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20506.323mil|Location2.X=20511.323mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20506.323mil|Location2.X=20511.323mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-10(2013.008mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20506.323mil|Location2.X=20511.323mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20506.323mil|Location2.X=20511.323mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-10(2013.008mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20526.009mil|Location2.X=20531.009mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20526.009mil|Location2.X=20531.009mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-11(2032.693mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20526.009mil|Location2.X=20531.009mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20526.009mil|Location2.X=20531.009mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-11(2032.693mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20545.694mil|Location2.X=20550.694mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20545.694mil|Location2.X=20550.694mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-12(2052.378mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20545.694mil|Location2.X=20550.694mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20545.694mil|Location2.X=20550.694mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-12(2052.378mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20565.379mil|Location2.X=20570.379mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20565.379mil|Location2.X=20570.379mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-13(2072.063mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20565.379mil|Location2.X=20570.379mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20565.379mil|Location2.X=20570.379mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-13(2072.063mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20585.064mil|Location2.X=20590.064mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20585.064mil|Location2.X=20590.064mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-14(2091.748mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20585.064mil|Location2.X=20590.064mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20585.064mil|Location2.X=20590.064mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-14(2091.748mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20604.749mil|Location2.X=20609.749mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20604.749mil|Location2.X=20609.749mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-15(2111.433mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20604.749mil|Location2.X=20609.749mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20604.749mil|Location2.X=20609.749mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-15(2111.433mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20624.434mil|Location2.X=20629.434mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20624.434mil|Location2.X=20629.434mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-16(2131.118mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20624.434mil|Location2.X=20629.434mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20624.434mil|Location2.X=20629.434mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-16(2131.118mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20644.119mil|Location2.X=20649.119mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20644.119mil|Location2.X=20649.119mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-17(2150.803mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20644.119mil|Location2.X=20649.119mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20644.119mil|Location2.X=20649.119mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-17(2150.803mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20663.804mil|Location2.X=20668.804mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20663.804mil|Location2.X=20668.804mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-18(2170.488mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20663.804mil|Location2.X=20668.804mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20663.804mil|Location2.X=20668.804mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-18(2170.488mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20683.489mil|Location2.X=20688.489mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20683.489mil|Location2.X=20688.489mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-19(2190.173mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20683.489mil|Location2.X=20688.489mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20683.489mil|Location2.X=20688.489mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-19(2190.173mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20348.843mil|Location2.X=20353.843mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20348.843mil|Location2.X=20353.843mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-2(1855.528mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20348.843mil|Location2.X=20353.843mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20348.843mil|Location2.X=20353.843mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-2(1855.528mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20703.174mil|Location2.X=20708.174mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20703.174mil|Location2.X=20708.174mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-20(2209.858mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20703.174mil|Location2.X=20708.174mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20703.174mil|Location2.X=20708.174mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-20(2209.858mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20368.528mil|Location2.X=20373.528mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20368.528mil|Location2.X=20373.528mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-3(1875.213mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20368.528mil|Location2.X=20373.528mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20368.528mil|Location2.X=20373.528mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-3(1875.213mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20388.213mil|Location2.X=20393.213mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20388.213mil|Location2.X=20393.213mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-4(1894.898mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20388.213mil|Location2.X=20393.213mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20388.213mil|Location2.X=20393.213mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-4(1894.898mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20407.898mil|Location2.X=20412.898mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20407.898mil|Location2.X=20412.898mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-5(1914.583mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20407.898mil|Location2.X=20412.898mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20407.898mil|Location2.X=20412.898mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-5(1914.583mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20427.583mil|Location2.X=20432.583mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20427.583mil|Location2.X=20432.583mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-6(1934.268mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20427.583mil|Location2.X=20432.583mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20427.583mil|Location2.X=20432.583mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-6(1934.268mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20447.268mil|Location2.X=20452.268mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20447.268mil|Location2.X=20452.268mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-7(1953.953mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20447.268mil|Location2.X=20452.268mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20447.268mil|Location2.X=20452.268mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-7(1953.953mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20466.953mil|Location2.X=20471.953mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20466.953mil|Location2.X=20471.953mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-8(1973.638mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20466.953mil|Location2.X=20471.953mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20466.953mil|Location2.X=20471.953mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-8(1973.638mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20486.639mil|Location2.X=20491.639mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20486.639mil|Location2.X=20491.639mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-9(1993.323mil,-2444.11mil) on Bottom Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20486.639mil|Location2.X=20491.639mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20486.639mil|Location2.X=20491.639mil|Location1.Y=17843.815mil|Location2.Y=17848.815mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J1-9(1993.323mil,-2444.11mil) on Top Layer And Track (1816.158mil,-2522.85mil)(2229.543mil,-2522.85mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20087.032mil|Location2.X=20092.032mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20087.032mil|Location2.X=20092.032mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-1(1593.717mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20087.032mil|Location2.X=20092.032mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20087.032mil|Location2.X=20092.032mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-1(1593.717mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20264.197mil|Location2.X=20269.197mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20264.197mil|Location2.X=20269.197mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-10(1770.882mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20264.197mil|Location2.X=20269.197mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20264.197mil|Location2.X=20269.197mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-10(1770.882mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20283.883mil|Location2.X=20288.883mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20283.883mil|Location2.X=20288.883mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-11(1790.567mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20283.883mil|Location2.X=20288.883mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20283.883mil|Location2.X=20288.883mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-11(1790.567mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20303.568mil|Location2.X=20308.568mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20303.568mil|Location2.X=20308.568mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-12(1810.252mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20303.568mil|Location2.X=20308.568mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20303.568mil|Location2.X=20308.568mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-12(1810.252mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20323.253mil|Location2.X=20328.253mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20323.253mil|Location2.X=20328.253mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-13(1829.937mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20323.253mil|Location2.X=20328.253mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20323.253mil|Location2.X=20328.253mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-13(1829.937mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20342.938mil|Location2.X=20347.938mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20342.938mil|Location2.X=20347.938mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-14(1849.622mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20342.938mil|Location2.X=20347.938mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20342.938mil|Location2.X=20347.938mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-14(1849.622mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20362.623mil|Location2.X=20367.623mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20362.623mil|Location2.X=20367.623mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-15(1869.307mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20362.623mil|Location2.X=20367.623mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20362.623mil|Location2.X=20367.623mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-15(1869.307mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20382.308mil|Location2.X=20387.308mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20382.308mil|Location2.X=20387.308mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-16(1888.992mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20382.308mil|Location2.X=20387.308mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20382.308mil|Location2.X=20387.308mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-16(1888.992mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20401.993mil|Location2.X=20406.993mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20401.993mil|Location2.X=20406.993mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-17(1908.677mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20401.993mil|Location2.X=20406.993mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20401.993mil|Location2.X=20406.993mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-17(1908.677mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20421.678mil|Location2.X=20426.678mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20421.678mil|Location2.X=20426.678mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-18(1928.362mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20421.678mil|Location2.X=20426.678mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20421.678mil|Location2.X=20426.678mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-18(1928.362mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20441.363mil|Location2.X=20446.363mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20441.363mil|Location2.X=20446.363mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-19(1948.047mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20441.363mil|Location2.X=20446.363mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20441.363mil|Location2.X=20446.363mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-19(1948.047mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20106.717mil|Location2.X=20111.717mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20106.717mil|Location2.X=20111.717mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-2(1613.402mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20106.717mil|Location2.X=20111.717mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20106.717mil|Location2.X=20111.717mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-2(1613.402mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20461.048mil|Location2.X=20466.048mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20461.048mil|Location2.X=20466.048mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-20(1967.732mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20461.048mil|Location2.X=20466.048mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20461.048mil|Location2.X=20466.048mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-20(1967.732mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20126.402mil|Location2.X=20131.402mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20126.402mil|Location2.X=20131.402mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-3(1633.087mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20126.402mil|Location2.X=20131.402mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20126.402mil|Location2.X=20131.402mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-3(1633.087mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20146.087mil|Location2.X=20151.087mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20146.087mil|Location2.X=20151.087mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-4(1652.772mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20146.087mil|Location2.X=20151.087mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20146.087mil|Location2.X=20151.087mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-4(1652.772mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20165.772mil|Location2.X=20170.772mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20165.772mil|Location2.X=20170.772mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-5(1672.457mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20165.772mil|Location2.X=20170.772mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20165.772mil|Location2.X=20170.772mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-5(1672.457mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20185.457mil|Location2.X=20190.457mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20185.457mil|Location2.X=20190.457mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-6(1692.142mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20185.457mil|Location2.X=20190.457mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20185.457mil|Location2.X=20190.457mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-6(1692.142mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20205.143mil|Location2.X=20210.143mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20205.143mil|Location2.X=20210.143mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-7(1711.827mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20205.143mil|Location2.X=20210.143mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20205.143mil|Location2.X=20210.143mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-7(1711.827mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20224.827mil|Location2.X=20229.827mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20224.827mil|Location2.X=20229.827mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-8(1731.512mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20224.827mil|Location2.X=20229.827mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20224.827mil|Location2.X=20229.827mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-8(1731.512mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20244.513mil|Location2.X=20249.513mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20244.513mil|Location2.X=20249.513mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-9(1751.197mil,3351.559mil) on Bottom Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20244.513mil|Location2.X=20249.513mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20244.513mil|Location2.X=20249.513mil|Location1.Y=23769.281mil|Location2.Y=23774.281mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Pad J2-9(1751.197mil,3351.559mil) on Top Layer And Track (1574.032mil,3402.74mil)(1987.417mil,3402.74mil) on Keep-Out Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20586.961mil|Location2.X=20591.961mil|Location1.Y=21667.336mil|Location2.Y=21672.336mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20586.961mil|Location2.X=20591.961mil|Location1.Y=21667.336mil|Location2.Y=21672.336mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Track (1852.146mil,1300.795mil)(2087.74mil,1300.795mil) on Bottom Layer And Track (2087.74mil,1300.795mil)(2421.441mil,1300.795mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19366.961mil|Location2.X=19371.961mil|Location1.Y=21667.336mil|Location2.Y=21672.336mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19366.961mil|Location2.X=19371.961mil|Location1.Y=21667.336mil|Location2.Y=21672.336mil|Absolute=True">Clearance Constraint: (Collision &lt; 6mil) Between Track (534.039mil,1300.795mil)(867.74mil,1300.795mil) on Bottom Layer And Track (867.74mil,1300.795mil)(1037.709mil,1300.795mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTCK12JIISLQRE2JMUKWG0GGZAPEIBQ1QUZT2NWEC3ZXA5CXCY4UF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20565.583mil|Location2.X=20613.34mil|Location1.Y=21645.958mil|Location2.Y=21693.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20565.583mil|Location2.X=20613.34mil|Location1.Y=21645.958mil|Location2.Y=21693.715mil|Absolute=True">Short-Circuit Constraint: Between Pad ANT1-1(2087.74mil,1300.795mil) on Bottom Layer And Track (2087.74mil,1300.795mil)(2421.441mil,1300.795mil) on Bottom Layer Location : [X = 20589.461mil][Y = 21669.836mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19345.583mil|Location2.X=19393.34mil|Location1.Y=21645.958mil|Location2.Y=21693.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19345.583mil|Location2.X=19393.34mil|Location1.Y=21645.958mil|Location2.Y=21693.715mil|Absolute=True">Short-Circuit Constraint: Between Pad ANT1-2(867.74mil,1300.795mil) on Bottom Layer And Track (534.039mil,1300.795mil)(867.74mil,1300.795mil) on Bottom Layer Location : [X = 19369.461mil][Y = 21669.836mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20565.583mil|Location2.X=20613.34mil|Location1.Y=21645.958mil|Location2.Y=21693.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20565.583mil|Location2.X=20613.34mil|Location1.Y=21645.958mil|Location2.Y=21693.715mil|Absolute=True">Short-Circuit Constraint: Between Track (1852.146mil,1300.795mil)(2087.74mil,1300.795mil) on Bottom Layer And Track (2087.74mil,1300.795mil)(2421.441mil,1300.795mil) on Bottom Layer Location : [X = 20589.461mil][Y = 21669.836mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19345.583mil|Location2.X=19393.34mil|Location1.Y=21645.958mil|Location2.Y=21693.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Work\GitHub\Airzai-PCB-Design\Airzai NFC Reader\Altium Data\AIRZAI_NFC_READER_FLEX.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=19345.583mil|Location2.X=19393.34mil|Location1.Y=21645.958mil|Location2.Y=21693.715mil|Absolute=True">Short-Circuit Constraint: Between Track (534.039mil,1300.795mil)(867.74mil,1300.795mil) on Bottom Layer And Track (867.74mil,1300.795mil)(1037.709mil,1300.795mil) on Bottom Layer Location : [X = 19369.461mil][Y = 21669.836mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

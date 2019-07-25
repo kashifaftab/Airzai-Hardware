@@ -1,0 +1,8 @@
+Added Component: Designator=TP3(TP_0.9MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP4(TP_0.9MM)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+5 Pin=TP3-1
+Added Pin To Net: NetName=GND Pin=TP4-1
+Added Member To Class: ClassName=AIRZAI_NFC_READER_FLEX Member=Component TP3 WIREPT
+Added Member To Class: ClassName=AIRZAI_NFC_READER_FLEX Member=Component TP4 WIREPT

@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=+5 Pin=J2-19
+Added Pin To Net: NetName=+5 Pin=J2-19
+Added Member To Class: ClassName=AIRZAI_NFC_READER_FLEX Member=Component J2 FFC Cable
