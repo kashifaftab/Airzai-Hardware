@@ -1,0 +1,143 @@
+Change Component Footprint: Designator=C1 Old Footprint=CAPC0402(1005)60_M New Footprint=1206_180
+Change Component Footprint: Designator=C2 Old Footprint=CAPC0402(1005)60_M New Footprint=SM0402_BTD.1SM_ACT_H55_CAP_WSS
+Change Component Footprint: Designator=C3 Old Footprint=CAPC0402(1005)60_M New Footprint=SM0402_BTD.1SM_ACT_H55_CAP_WSS
+Added Component: Designator=C4(SM0402_BTD.1SM_ACT_H55_CAP_WSS)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Alternate Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Alternate PartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Cap_Case"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Cap_F"; Value = "0.0000047"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.tdk.com/pdf/TDKMLCCCapRange.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "CompType"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR_ohm"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "IRMS_A"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2015-02-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "C1005X5R0J475M050BC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarized"; Value = "N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2008-06-19"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 3"; Value = "Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-7395-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "1962109"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 3"; Value = "48T2906"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolVersion"; Value = "2008-07-09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TaMax_C"; Value = "85"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TaMin_C"; Value = "-55"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TempCo"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance_%"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "U/M"; Value = "EA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4.7uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value1"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value2"; Value = "6.3V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDisplayed"; Value = "4.7µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC_V"; Value = "6.3"; VariantName = "[No Variations]"
+Added Component: Designator=C5(SM0402_BTD.1SM_ACT_H55_CAP_WSS)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Alternate Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Alternate PartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Cap_Case"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Cap_F"; Value = "0.0000001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://product.tdk.com/en/catalog/datasheets/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "CompType"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR_ohm"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "IRMS_A"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2015-02-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "C1005X5R1A104K050BA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarized"; Value = "N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2008-06-19"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 3"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1265-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "810-C1005X5R1A104K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 3"; Value = "2368215"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolVersion"; Value = "2008-07-09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TaMax_C"; Value = "85"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TaMin_C"; Value = "-55"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TempCo"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance_%"; Value = "10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "U/M"; Value = "EA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value1"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value2"; Value = "10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDisplayed"; Value = "0.1µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC_V"; Value = "10"; VariantName = "[No Variations]"
+Added Component: Designator=C6(SM0402_BTD.1SM_ACT_H55_CAP_WSS)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Alternate Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Alternate PartNumber"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Cap_Case"; Value = "SM0402_BTD.1SM_ACT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Cap_F"; Value = "0.0000001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://product.tdk.com/en/catalog/datasheets/mlcc_commercial_general_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "CompType"; Value = "Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR_ohm"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "IRMS_A"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2015-02-23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MountType"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "C1005X5R1A104K050BA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarized"; Value = "N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2008-06-19"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 3"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "445-1265-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "810-C1005X5R1A104K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 3"; Value = "2368215"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolVersion"; Value = "2008-07-09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TaMax_C"; Value = "85"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TaMin_C"; Value = "-55"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TempCo"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance_%"; Value = "10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "U/M"; Value = "EA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value1"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value2"; Value = "10V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueDisplayed"; Value = "0.1µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VDC_V"; Value = "10"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC_5V Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=VCC_5V Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=VCC_5V Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=+5 Pin=J5-1
+Added Pin To Net: NetName=GND Pin=J5-2
+Added Pin To Net: NetName=LED Str CLK Pin=J5-3
+Added Pin To Net: NetName=LED Str DATA Pin=J5-4
+Added Pin To Net: NetName=NetJ4_1 Pin=L1-1
+Added Pin To Net: NetName=+5 Pin=L1-2
+Added Pin To Net: NetName=NetJ4_3 Pin=L2-1
+Added Pin To Net: NetName=3V3 Pin=L2-2
+Added Pin To Net: NetName=ACCELERO_INT Pin=R1-1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=ACCELERO_INT Pin=R2-1
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Member To Class: ClassName=AIRZAI_LID_BD_REVB Sheet1 Member=Component C4 C1005X5R0J475M050BC
+Added Member To Class: ClassName=AIRZAI_LID_BD_REVB Sheet1 Member=Component C5 C1005X5R1A104K050BA
+Added Member To Class: ClassName=AIRZAI_LID_BD_REVB Sheet1 Member=Component C6 C1005X5R1A104K050BA
+Added Member To Class: ClassName=AIRZAI_LID_BD_REVB Sheet1 Member=Component J5 503480-0400
+Added Member To Class: ClassName=AIRZAI_LID_BD_REVB Sheet1 Member=Component L1 CB2012T100KR
+Added Member To Class: ClassName=AIRZAI_LID_BD_REVB Sheet1 Member=Component L2 CB2012T100KR
+Added Member To Class: ClassName=AIRZAI_LID_BD_REVB Sheet1 Member=Component R1 DNP
+Added Member To Class: ClassName=AIRZAI_LID_BD_REVB Sheet1 Member=Component R2 ERJ-2GE0R00X

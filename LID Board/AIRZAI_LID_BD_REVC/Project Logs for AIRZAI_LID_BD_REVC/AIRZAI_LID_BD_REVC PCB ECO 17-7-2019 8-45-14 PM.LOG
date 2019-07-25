@@ -1,0 +1,3 @@
+Change Class Name : Old Net Name=AIRZAI_LID_BD_REVB Sheet1 New Net Name=AIRZAI_LID_BD_REVC Sheet1
+Change Room Name: Old Name=AIRZAI_LID_BD_REVB Sheet1 New Name=AIRZAI_LID_BD_REVC Sheet1
+Change Room Scope: Old Scope=InComponentClass('AIRZAI_LID_BD_REVB Sheet1') New Scope=InComponentClass('AIRZAI_LID_BD_REVC Sheet1')

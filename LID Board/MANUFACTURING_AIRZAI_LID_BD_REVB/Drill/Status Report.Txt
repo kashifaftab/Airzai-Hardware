@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [AIRZAI_LID_BD_REVB.PrjPcb]
+   Generated File[AIRZAI_LID_BD_REVB.TXT]
+   Generated File[AIRZAI_LID_BD_REVB.LDP]
+   Generated File[AIRZAI_LID_BD_REVB.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 10:14:15 PM On 24/5/2019
