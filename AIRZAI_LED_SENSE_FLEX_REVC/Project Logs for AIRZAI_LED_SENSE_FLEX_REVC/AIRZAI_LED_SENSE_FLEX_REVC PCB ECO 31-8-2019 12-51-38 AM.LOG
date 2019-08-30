@@ -1,0 +1,4 @@
+Added Component: Designator=CRX0(CONTACT_POINT_1CM _SQ)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetCRX0_1 Pin=CRX0-1
+Added Member To Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVC Member=Component CRX0 CONTACT POINT 1

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=C9-2
+Removed Pin From Net: NetName=GND Pin=C10-2
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVC Member=C9
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVC Member=C10
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVC Member=L1
+Removed Member From Class: ClassName=AIRZAI_LED_SENSE_FLEX_REVC Member=TP11
