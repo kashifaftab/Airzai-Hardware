@@ -1,0 +1,36 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~AIRZAI_MBD_REVC.PrjPcb|ReportField=ProjectFullPath~C:\Users\Prajeeth\OneDrive\Weekly updates\GitHub\Airzai-Hardware\Airzai MBD-AUG 22\Altium Data\AIRZAI_MBD_REVC\AIRZAI_MBD_REVC.PrjPcb|ReportField=Title~Bill of Materials For Project [AIRZAI_MBD_REVC.PrjPcb] (No PCB Document Selected)|ReportField=ReportTime~10:07:33 AM|ReportField=ReportDate~2019-09-12|ReportField=ReportDateTime~2019-09-12 10:07:33 AM|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=TotalQuantity~159|ReportField=TotalActualPrice~0|ReportField=TotalTargetPrice~0|ReportField=VersionControl_RevNumber~|ReportField=VersionControl_ProjFolderRevNumber~d28cc6cf30a3eccb2e6278e4bd433f63cc75e36e|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2019-09-12|ReportField=CurrentTime~10:07:30 AM|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Users\Prajeeth\OneDrive\Weekly updates\GitHub\Airzai-Hardware\Airzai MBD-AUG 22\Altium Data\AIRZAI_MBD_REVC\AIRZAI_BASE_BD_REVC Sheet1.SchDoc|ReportField=DocumentName~AIRZAI_BASE_BD_REVC Sheet1.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2019-08-23|ReportField=Organization~|ReportField=ProjectName~AIRZAI_MBD_REVC.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~AIRZAI_MBD_REVC.PrjPcb|ReportField=DataSourceFullPath~C:\Users\Prajeeth\OneDrive\Weekly updates\GitHub\Airzai-Hardware\Airzai MBD-AUG 22\Altium Data\AIRZAI_MBD_REVC\AIRZAI_MBD_REVC.PrjPcb|ReportField=PCBConfigurationName~Sources|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|GRM155R61A104KA01D|CAP, CERM, 0.1 µF, 10 V, +/- 10%, X5R, 0402|C1, C2, C3, C16|0402|GRM155R61A104KA01D|4
+2|GRM3195C1H273JA01D|1206 27 nF 50 V Â±5% Tolerance C0G SMT Multilayer Ceramic Capacitor|C4, C17, C18, C19|1206CAP|GRM3195C1H273JA01D|4
+3|GRM31CR60J107ME39L|CAP, CERM, 100 µF, 6.3 V, +/- 20%, X5R, 1206|C5, C14, C15|1206_180|GRM31CR60J107ME39L|3
+4|C1005X5R0J475M050BC|CAP, CERM, 4.7 µF, 6.3 V, +/- 20%, X5R, 0402|C6, C7, C8|SM0402_BTD.1SM_ACT_H55_CAP_WSS|C1005X5R0J475M050BC|3
+5|C1005X5R1A104K050BA|CAP, CERM, 0.1 µF, 10 V, +/- 10%, X5R, 0402|C9, C10, C20|SM0402_BTD.1SM_ACT_H55_CAP_WSS|C1005X5R1A104K050BA|3
+6|C2012X5R1C226K125AC|CAP, CERM, 22 µF, 16 V, +/- 10%, X5R, 0805|C11|0805_HV|C2012X5R1C226K125AC|1
+7|GRM21BR61A106KE19L|CAP, CERM, 10 µF, 10 V, +/- 10%, X5R, 0805|C12, C13|0805_HV|GRM21BR61A106KE19L|2
+8|CD0603-B00340|Diode, Schottky, 45 V, 0.03 A, 0603 Diode|D1, D4|Diode_0603|CD0603-B00340|2
+9|SML-311UTT86|LED, Red, SMD|D2|SML-31_Red|SML-311UTT86|1
+10|UCLAMP0501H.TCT|TVS DIODE 5V 12.5V SOD523|D5|SOD-523|UCLAMP0501H.TCT|1
+11|UCLAMP3301H.TCT|TVS DIODE 3.3V 8V SOD523|D6|SOD-523|UCLAMP3301H.TCT|1
+12|Fiducial|Fiducial mark.  There is nothing to buy or mount.|FID1, FID3, FID4|Fiducial10-20|Fiducial|3
+13|FTSH-105-01-F-D-K|Header, 1.27 mm, 5x2, Gold, TH|J4, J6|Samtec_FTSH-105-01-x-D-K|FTSH-105-01-F-D-K|2
+14|632723300011|USB 3.1 Type C Receptacle WR-COM, Horizontal, SMT / THT|J10|632723300011|632723300011|1
+15|52892-2033|0.5 mm Pitch Easy-On(TM) Type FPC Connector, 2.0 mm Mated Height, Right Angle, ZIF, SMT, Bottom Contact, 20 Circuits, -40 to 85 degC, ELV and RoHS Compliant, Tape and Reel|J14|MOLX-52892-2033|CMP-1241-00473-1|1
+16|BLM15AG100SN1D|Ferrite Bead, 10 ohm @ 100 MHz, 1 A, 0402|L1, L3|0402|BLM15AG100SN1D|2
+17|BRC2012T2R2MD|Inductor, Wirewound, 2.2 µH, 1 A, 0.143 ohm, SMD|L2|0805_HV|BRC2012T2R2MD|1
+18|MLF2012C101KTD25|Fixed Ind 100uh 2ma 3.1 Ohm Smd|L4, L5|0805_Inductor|MLF2012C101KTD25|2
+19|ERJ-2GE0R00X|RES, 0, 5%, 0.063 W, 0402|R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R14, R15, R16, R17, R18, R19, R20, R21, R23, R25, R26, R27, R28, R29, R31, R51, R54, R58, R66, R69, R70|0402|ERJ-2GE0R00X|33
+20|CRCW0402100KJNED|RES, 100 k, 5%, 0.063 W, 0402|R13, R34, R35, R36, R53, R72|0402|CRCW0402100KJNED|6
+21|RMCF0402JT4K70|Chip Resistor, 4.7 KOhm, +/- 5%, 0.063 W, -55 to 155 degC, 0402 (1005 Metric), RoHS, Tape and Reel|R22, R24|0402|RES-2|2
+22|RC0603JR-070RL|RES, 0, 5%, 0.1 W, 0603|R30, R33, R39, R40, R41|0603|ERJ-2GE0R00X|5
+23|CRCW0402270RJNED|RES, 270, 5%, 0.063 W, 0402|R32|0402|CRCW0402270RJNED|1
+24|CRCW04022K20JNED|RES, 2.2 k, 5%, 0.063 W, 0402|R37|0402|CRCW04022K20JNED|1
+25|CRCW040210K0JNED|RES, 10 k, 5%, 0.063 W, 0402|R38, R55, R56, R73|0402|CRCW040210K0JNED|4
+26|CRCW04021K00JNED|RES, 1.0 k, 5%, 0.063 W, 0402|R44|0402|CRCW04021K00JNED|1
+27||RES SMD 4.7K OHM 1% 1/16W 0402|R48, R49|0402|CRCW04023K30JNED|2
+28|RC0603JR-07750RL|RES, 750, 5%, 0.1 W, 0603|R50|0603|RC0603JR-07750RL|1
+29|WIREPT||TP1, TP2, TP3, TP4, TP6, TP7, TP8, TP9, TP10, TP11, TP12, TP13, TP14, TP15, TP16, TP17, TP18, TP19, TP21, TP22, TP23, TP24, TP25, TP26, TP27, TP28, TP29, TP30, TP31, TP32, TP33, TP34, TP35, TP36, TP37, TP38, TP39, TP40, TP41, TP42, TP43, TP44, TP45, TP46, TP47, TP48, TP49, TP50, TP51, TP53, TP54, TP55, TP56, TP57, TP58, TP62, TP63, TP64, TP65|TP_0.9MM|WIREPT|59
+30|TESTPOINT||TP60, TP61|TP_0.9MM|TESTPOINT|2
+31|CC3220MODASF12MONR|SimpleLink Wi-Fi and Internet-of-Things Module Solution, a Single-Chip Wireless MCU, MON0063A (QFM-63)|U1|MON0063A|CC3220MODASF12MONR|1
+32|NC7WZ17P6X|NC7WZ17 Series 5.5 V TinyLogic UHS Dual Buffer w/ Schmitt Trigger Inputs-SC-70-6|U2|SC-70-NC7WZ17P6X|NC7WZ17P6X|1
+33|TPS62162DSGR|Buck Step Down Regulator with 3 to 17 V Input and 3.3 V Output, -40 to 85 degC, 8-Pin WSON (DSG), Green (RoHS & no Sb/Br)|U3|DSG0008A|TPS62162DSGR|1
+34|Apple CP|Auth 3.0 CP|U4|XDFN-8P-Apple|Apple CP|1
+35|SHT30-DIS-B|SHT3x Series 5.5 V Â±3 %RH 0 to 100% Temperature and Humidity Sensor - DFN-8|U5|DFN250X250X100-9N|SHT30-DIS-B|1
