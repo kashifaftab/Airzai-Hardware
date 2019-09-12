@@ -1,10 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 10:46:23 AM On 2019-09-12
+
 Output: Bill of Materials
 Type  : BOM
-From  : Variant [[No Variations]] of Project [AIRZAI_MBD_REVC.PrjPcb]
-   Generated File[Bill of Materials-AIRZAI_MBD_REVC.xls]
+From  : Variant [Variant of AIRZAI_MBD_REVC] of Project [AIRZAI_MBD_REVC.PrjPcb]
+   Generated File[Bill of Materials-AIRZAI_MBD_REVC(Variant of AIRZAI_MBD_REVC).xlsx]
 
 
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 10:07:34 AM On 2019-09-12
+Finished Output Generation At 10:47:21 AM On 2019-09-12
